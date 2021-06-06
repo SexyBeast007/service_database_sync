@@ -1,0 +1,25 @@
+@HiveType(typeId: 0)
+class Book {
+  @HiveField(0)
+  String title;
+
+  @HiveField(1)
+  String author;
+
+  @HiveField(2)
+  DateTime publishingDate;
+
+  @HiveField(3)
+  DateTime dateAdded;
+
+  @HiveField(4)
+  DateTime lastModified;
+
+  Book({});
+
+  /// Override toString() so that we can print actual objects instead of instances
+  @override
+  String toString() {
+    return 'Book - title: $title, author: $author, published: $publishingDate, added: $dateAdded, modified: $lastModified';
+  }
+}
