@@ -11,7 +11,7 @@
     - To json parsing
 
 # MAJOR ISSUE:
-    Problem: For the production app version, the "Book" values will be encrypted by Hive 256 AES. This creates the challenge that if the Parse Back4App database is a master database change log, then how do other local client databases decrypt encrypted data if they do not have access to the keys. The keys would be locally stored by whomever initiated a database action. It must be figured out how to share the key securely across authorized users without creating any possible vulnerability.
+    '''Problem: For the production app version, the "Book" values will be encrypted by Hive 256 AES. This creates the challenge that if the Parse Back4App database is a master database change log, then how do other local client databases decrypt encrypted data if they do not have access to the keys. The keys would be locally stored by whomever initiated a database action. It must be figured out how to share the key securely across authorized users without creating any possible vulnerability.'''
 
 # TODO:
     - Handle inter-device encryption issue
