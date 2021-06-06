@@ -20,3 +20,6 @@
 # TODO:
     - Handle inter-device encryption issue
     - Create read event for building database changes at local database
+    - Create edit events
+    - Test non-encrypted version accross multiple authorized devices
+    - Create services for reading database change logs and acting on them to update locally
